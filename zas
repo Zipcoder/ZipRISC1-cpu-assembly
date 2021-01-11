@@ -1,0 +1,3 @@
+#!/bin/bash
+# run the assembler (you prob want to capture stdout into a file...)
+java -Dfile.encoding=UTF-8 -cp ./ziprisc1/target/classes rocks.zipcode.zas.ZAS $1

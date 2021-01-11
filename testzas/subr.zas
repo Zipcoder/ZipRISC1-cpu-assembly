@@ -1,0 +1,15 @@
+.OR 0x0000
+    BRA start
+t:
+.WD 5
+timestwo:
+    // x2 has number to be doubled
+    ADD x2 x2 x2
+    RET
+start:
+    // subroutine test
+    LD x2 t
+    OUT x2
+    CALL timestwo
+    OUT x2
+    HLT

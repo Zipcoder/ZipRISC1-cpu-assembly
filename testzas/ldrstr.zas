@@ -1,0 +1,15 @@
+.OR 0x0000
+start:
+    LDI x5 tmpi
+    OUT x5
+    LDR x6 x5
+    OUT x6
+    OUT x6
+    ADDI x6 x6 6
+    STR x6 x5
+//    OUT x6
+exit:
+    HLT
+.OR 0x0010
+tmpi:
+.WD 111

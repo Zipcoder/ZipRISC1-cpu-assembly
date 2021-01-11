@@ -1,0 +1,18 @@
+.OR 0x0000
+start:
+    LD x5, tmpi
+    OUT x5
+    LSH x5 x5 19
+    OUT x5
+    RSH x5 x5 11
+    OUT x5
+    RSH x5 x5 1
+    OUT x5
+    SUBI x5 x5 1
+    SUBI x5 x5 1
+    SUBI x5 x5 1
+    OUT x5
+exit:
+    HALT
+tmpi:
+.WD 1

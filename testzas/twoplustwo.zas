@@ -1,0 +1,10 @@
+.OR 0x0000 // start at address zero
+    BRA start
+two:
+.WD 2
+start:
+    LD x1, two
+    LD x2, two
+    ADD x1, x1, x2
+    DUMP
+    HLT

@@ -1,0 +1,16 @@
+.OR 0x0000
+start:
+    LDI xSP stackbase
+    LDI x5 tmpi
+    PUSH x5
+    INCR x5
+    POP x5
+    OUT x5
+exit:
+    HLT
+.OR 0x0050
+stackbase:
+.WD 15
+tmpi:
+.WD 63
+

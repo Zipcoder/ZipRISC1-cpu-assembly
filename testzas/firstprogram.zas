@@ -1,0 +1,7 @@
+.OR 0x0000
+    BRA start
+tmpvar:
+.WD 127
+start:
+    ADD x1 x2 x3
+    HLT

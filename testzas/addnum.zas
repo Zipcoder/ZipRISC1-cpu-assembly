@@ -1,0 +1,11 @@
+.OR 0x0000
+loop:
+    IN x5
+    BRZ x5, exit
+    IN x6
+    SUB x7, x5, x6
+    SUBI x7 x7 1
+    OUT x7
+    BRA loop
+exit:
+    HALT
